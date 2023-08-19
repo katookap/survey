@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below.</p>
+  <form id="survey-form" action="https://register-demo.freecodecamp.org" method="post">
+   
+   <fieldset>
+    <label for="name" id="name-label"> Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="Enter your age" min="12" max="120" required>
+    </fieldset>
+
+    <fieldset>
+    <label for="dropdown" class="center-label">Select Your Country:</label>
+    <select id="dropdown" required>
+      <option value="">Select a country</option>
+      <option value="denmark">Denmark</option>
+      <option value="iceland">Iceland</option>
+      <option value="sweden">Sweden</option>
+      <option value="norway">Norway</option>
+    </select>
+     </fieldset>
+
+<fieldset>
+<p2>What movies have you seen?</p2>
+    <label for="openheimer"><input id="openheimer" value="openheimer" type="radio" name="movie-type" class="inline" /> I have seen Openheimer</label>
+        <label for="barbie"><input id="barbie" value="barbie" type="radio" name="movie-type" class="inline" /> I have seen Barbie movie</label>
+
+<label for="both"><input id="both" value="both"  type="radio" name="movie-type" class="inline" /> I have seen both movies</label>
+</fieldset>
+
+<fieldset>
+<p2>What did you enjoy the most?</p2>
+<label for="plot"><input id="plot" value="plot" type="checkbox" name="enjoy-most" class="inline" /> The plot</label>
+<label for="dialogs"><input id="dialogs" value="dialogs" type="checkbox" name="enjoy-most" class="inline" /> The dialogs</label>
+<label for="memes"><input id="memes" value="memes" type="checkbox" name="enjoy-most" class="inline" /> The memes</label>
+</fieldset>
+
+
+<fieldset>
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" rows="4" placeholder="Enter your comments"></textarea>
+    </fieldset>
+
+   <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+</html>
